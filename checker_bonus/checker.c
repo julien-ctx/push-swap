@@ -6,7 +6,7 @@
 /*   By: jcauchet <jcauchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 21:17:54 by juliencauch       #+#    #+#             */
-/*   Updated: 2022/03/07 10:17:48 by jcauchet         ###   ########.fr       */
+/*   Updated: 2022/11/05 15:08:55 by jcauchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	**args_handler(int *ac, char **av)
 		array = ft_split(av[1], ' ');
 		if (!array)
 		{
-			write(1, "Error\n", 6);
+			write(2, "Error\n", 6);
 			exit(1);
 		}
 		*ac = ft_array_size(array);

@@ -6,7 +6,7 @@
 /*   By: jcauchet <jcauchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 20:10:58 by juliencauch       #+#    #+#             */
-/*   Updated: 2022/03/07 15:24:55 by jcauchet         ###   ########.fr       */
+/*   Updated: 2022/11/05 15:11:27 by jcauchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,9 @@ int	main(int ac, char **av)
 	t_node	*stack_a;
 	t_node	*stack_b;
 
+	if (av[1])
+		if (!av[1][0])
+			error();
 	stack_a = NULL;
 	array = NULL;
 	array = args_handler(&ac, av);
