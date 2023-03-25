@@ -14,6 +14,8 @@ Several moves are available and it is up to us to use them in the best way:
 - **reverse rotate A**: the last element of stack A becomes the first one. 
 - **reverse rotate B**: the last element of stack B becomes the first one. 
 - **reverse rotate A and B**.
+- **push in stack A**.
+- **push in stack B**.
 
 The movements are then printed on the standard output to count them. The idea is to have as few as possible.
 
